@@ -5,151 +5,200 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡A | 广州中转 | 流媒体, server: 120.232.96.45, port: 20006, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 175.41.180.116}}
-  - {name: 🇸🇬 新加坡B | 广州中转 | 流媒体, server: 120.232.96.45, port: 20007, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.139.209.155}}
-  - {name: 🇸🇬 新加坡C | 广州中转 | 流媒体, server: 120.232.96.45, port: 20008, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.229.99.218}}
-  - {name: 🇸🇬 新加坡D | 揭阳中转 | 流媒体, server: 18.167.72.160, port: 60000, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 13.228.89.91}}
-  - {name: 🇸🇬 新加坡E | 广州G口 | 流媒体, server: 120.232.96.41, port: 20010, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.136.178.66}}
-  - {name: 🇯🇵 日本A | 徐州中转 | 已优化, server: 52.81.85.34, port: 30000, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 108.61.187.139}}
-  - {name: 🇯🇵 日本B | 徐州中转 | 已优化, server: 52.81.85.34, port: 30001, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 104.238.160.99}}
-  - {name: 🇯🇵 日本C | 徐州中转 | 已优化, server: 52.81.85.34, port: 30002, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 167.179.73.163}}
-  - {name: 🇯🇵 日本D | 徐州中转 | 已优化, server: 52.81.85.34, port: 30003, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.182.114.115}}
-  - {name: 🇺🇸 美国C | 高防落地 | 流媒体, server: 173.82.245.155, port: 50002, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 173.82.245.155}}
-  - {name: 🇰🇷 韩国A | 长沙中转 | 已优化, server: 52.81.85.34, port: 30004, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 158.247.215.191}}
-  - {name: 🇰🇷 韩国B | 长沙中转 | 已优化, server: 52.81.85.34, port: 30005, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 141.164.63.113}}
-  - {name: 🇰🇷 韩国C | 长沙中转 | 已优化, server: 52.81.85.34, port: 30006, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 141.164.63.3}}
-  - {name: 🇭🇰 香港G | 广州中转 | 流媒体, server: h5.yt001.xyz, port: 20005, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.163.24.179}}
-  - {name: 🇭🇰 香港H | 广州中转 | 流媒体, server: 120.232.96.41, port: 20011, type: vmess, uuid: 621dd07a-2c50-3c36-bee9-bc40ff627027, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.167.42.123}}
+  - {name: 学术交流, server: 10.10.10.10, port: 50040, type: vmess, uuid: 15e296c0-f255-4ce6-ae83-e6949e2bea10, alterId: 4, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 10.10.10.10}}
+  - {name: "🇭🇰 A 香港HKBN1—CM[流媒体]", server: gm.xxatf.top, port: 10100, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 101.xxatf.top}}
+  - {name: "🇨🇳 台湾1—CM[流媒体]", server: gm.xxatf.top, port: 10073, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 73.xxatf.top}}
+  - {name: 🇹🇷 土耳其—CU, server: cscu.xxatf.top, port: 10087, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 87.xxatf.top}}
+  - {name: 🇸🇬 新加坡do1—CM, server: gm.xxatf.top, port: 10091, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 91.xxatf.top}}
+  - {name: 🇯🇵 日本aws11—CM, server: gm.xxatf.top, port: 10097, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 97.xxatf.top}}
+  - {name: 🇯🇵 日本aws14—CU, server: cscu.xxatf.top, port: 10100, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 100.xxatf.top}}
+  - {name: 🇯🇵 日本aws1—CU, server: cscu.xxatf.top, port: 10086, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 86.xxatf.top}}
+  - {name: 🇺🇸 美国aws1—CU, server: cscu.xxatf.top, port: 10095, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 95.xxatf.top}}
+  - {name: 🇺🇸 美国inap-CU, server: cscu.xxatf.top, port: 23451, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: do1.xxatf.top}}
+  - {name: 🇰🇷 韩国aws1, server: gm.xxatf.top, port: 10029, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 29.xxatf.top}}
+  - {name: 🇰🇷 韩国aws12—CM, server: gm.xxatf.top, port: 10094, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 94.xxatf.top}}
+  - {name: 🇰🇷 韩国aws2—CM, server: gm.xxatf.top, port: 10089, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 89.xxatf.top}}
+  - {name: 🇭🇰 香港aws11—CM, server: gm.xxatf.top, port: 10066, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 66.xxatf.top}}
+  - {name: 🇭🇰 香港aws12—CM, server: gm.xxatf.top, port: 10022, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 22.xxatf.top}}
+  - {name: 🇭🇰 香港aws1—CM, server: gm.xxatf.top, port: 10041, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 41.xxatf.top}}
+  - {name: 🇭🇰 香港aws2—CM, server: gm.xxatf.top, port: 10096, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 96.xxatf.top}}
+  - {name: 🇭🇰 香港aws3—CM, server: gm.xxatf.top, port: 10098, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 98.xxatf.top}}
+  - {name: 🇭🇰 香港aws4—CM, server: gm.xxatf.top, port: 10099, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 99.xxatf.top}}
+  - {name: "🇭🇰 香港HE[流媒体]", server: gm.xxatf.top, port: 21015, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: awshg11.xxatf.top}}
+  - {name: 🇲🇾 马来西亚—CM, server: gm.xxatf.top, port: 10046, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 46.xxatf.top}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,21 +214,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡A | 广州中转 | 流媒体
-      - 🇸🇬 新加坡B | 广州中转 | 流媒体
-      - 🇸🇬 新加坡C | 广州中转 | 流媒体
-      - 🇸🇬 新加坡D | 揭阳中转 | 流媒体
-      - 🇸🇬 新加坡E | 广州G口 | 流媒体
-      - 🇯🇵 日本A | 徐州中转 | 已优化
-      - 🇯🇵 日本B | 徐州中转 | 已优化
-      - 🇯🇵 日本C | 徐州中转 | 已优化
-      - 🇯🇵 日本D | 徐州中转 | 已优化
-      - 🇺🇸 美国C | 高防落地 | 流媒体
-      - 🇰🇷 韩国A | 长沙中转 | 已优化
-      - 🇰🇷 韩国B | 长沙中转 | 已优化
-      - 🇰🇷 韩国C | 长沙中转 | 已优化
-      - 🇭🇰 香港G | 广州中转 | 流媒体
-      - 🇭🇰 香港H | 广州中转 | 流媒体
+      - 学术交流
+      - 🇭🇰 A 香港HKBN1—CM[流媒体]
+      - 🇨🇳 台湾1—CM[流媒体]
+      - 🇹🇷 土耳其—CU
+      - 🇸🇬 新加坡do1—CM
+      - 🇯🇵 日本aws11—CM
+      - 🇯🇵 日本aws14—CU
+      - 🇯🇵 日本aws1—CU
+      - 🇺🇸 美国aws1—CU
+      - 🇺🇸 美国inap-CU
+      - 🇰🇷 韩国aws1
+      - 🇰🇷 韩国aws12—CM
+      - 🇰🇷 韩国aws2—CM
+      - 🇭🇰 香港aws11—CM
+      - 🇭🇰 香港aws12—CM
+      - 🇭🇰 香港aws1—CM
+      - 🇭🇰 香港aws2—CM
+      - 🇭🇰 香港aws3—CM
+      - 🇭🇰 香港aws4—CM
+      - 🇭🇰 香港HE[流媒体]
+      - 🇲🇾 马来西亚—CM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
