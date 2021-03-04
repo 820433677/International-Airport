@@ -5,200 +5,183 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 学术交流, server: 10.10.10.10, port: 50040, type: vmess, uuid: 15e296c0-f255-4ce6-ae83-e6949e2bea10, alterId: 4, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 10.10.10.10}}
-  - {name: "🇭🇰 A 香港HKBN1—CM[流媒体]", server: gm.xxatf.top, port: 10100, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 101.xxatf.top}}
-  - {name: "🇨🇳 台湾1—CM[流媒体]", server: gm.xxatf.top, port: 10073, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 73.xxatf.top}}
-  - {name: 🇹🇷 土耳其—CU, server: cscu.xxatf.top, port: 10087, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 87.xxatf.top}}
-  - {name: 🇸🇬 新加坡do1—CM, server: gm.xxatf.top, port: 10091, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 91.xxatf.top}}
-  - {name: 🇯🇵 日本aws11—CM, server: gm.xxatf.top, port: 10097, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 97.xxatf.top}}
-  - {name: 🇯🇵 日本aws14—CU, server: cscu.xxatf.top, port: 10100, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 100.xxatf.top}}
-  - {name: 🇯🇵 日本aws1—CU, server: cscu.xxatf.top, port: 10086, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 86.xxatf.top}}
-  - {name: 🇺🇸 美国aws1—CU, server: cscu.xxatf.top, port: 10095, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 95.xxatf.top}}
-  - {name: 🇺🇸 美国inap-CU, server: cscu.xxatf.top, port: 23451, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: do1.xxatf.top}}
-  - {name: 🇰🇷 韩国aws1, server: gm.xxatf.top, port: 10029, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 29.xxatf.top}}
-  - {name: 🇰🇷 韩国aws12—CM, server: gm.xxatf.top, port: 10094, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 94.xxatf.top}}
-  - {name: 🇰🇷 韩国aws2—CM, server: gm.xxatf.top, port: 10089, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 89.xxatf.top}}
-  - {name: 🇭🇰 香港aws11—CM, server: gm.xxatf.top, port: 10066, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 66.xxatf.top}}
-  - {name: 🇭🇰 香港aws12—CM, server: gm.xxatf.top, port: 10022, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 22.xxatf.top}}
-  - {name: 🇭🇰 香港aws1—CM, server: gm.xxatf.top, port: 10041, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 41.xxatf.top}}
-  - {name: 🇭🇰 香港aws2—CM, server: gm.xxatf.top, port: 10096, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 96.xxatf.top}}
-  - {name: 🇭🇰 香港aws3—CM, server: gm.xxatf.top, port: 10098, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 98.xxatf.top}}
-  - {name: 🇭🇰 香港aws4—CM, server: gm.xxatf.top, port: 10099, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 99.xxatf.top}}
-  - {name: "🇭🇰 香港HE[流媒体]", server: gm.xxatf.top, port: 21015, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: awshg11.xxatf.top}}
-  - {name: 🇲🇾 马来西亚—CM, server: gm.xxatf.top, port: 10046, type: vmess, uuid: c1842d1e-57e3-359f-bf1b-8dd95247bbc7, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 46.xxatf.top}}
+  - {name: 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡, server: tw.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: tw.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-🚀BGP三网优化-负载均衡, server: hk.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡, server: kr.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-🚀BGP三网优化-负载均衡, server: jp.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾01节点, server: tw-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾02节点, server: tw-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾03节点, server: tw-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港01节点, server: hk-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港02节点, server: hk-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港03节点, server: hk-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港04节点, server: hk-4.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港05节点, server: hk-5.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港06节点, server: hk-6.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港07节点, server: hk-7.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港08节点, server: hk-8.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本01节点, server: jp-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本02节点, server: jp-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本03节点, server: jp-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -214,27 +197,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 学术交流
-      - 🇭🇰 A 香港HKBN1—CM[流媒体]
-      - 🇨🇳 台湾1—CM[流媒体]
-      - 🇹🇷 土耳其—CU
-      - 🇸🇬 新加坡do1—CM
-      - 🇯🇵 日本aws11—CM
-      - 🇯🇵 日本aws14—CU
-      - 🇯🇵 日本aws1—CU
-      - 🇺🇸 美国aws1—CU
-      - 🇺🇸 美国inap-CU
-      - 🇰🇷 韩国aws1
-      - 🇰🇷 韩国aws12—CM
-      - 🇰🇷 韩国aws2—CM
-      - 🇭🇰 香港aws11—CM
-      - 🇭🇰 香港aws12—CM
-      - 🇭🇰 香港aws1—CM
-      - 🇭🇰 香港aws2—CM
-      - 🇭🇰 香港aws3—CM
-      - 🇭🇰 香港aws4—CM
-      - 🇭🇰 香港HE[流媒体]
-      - 🇲🇾 马来西亚—CM
+      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
+      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
+      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾01节点
+      - 🇨🇳 台湾02节点
+      - 🇨🇳 台湾03节点
+      - 🇭🇰 香港01节点
+      - 🇭🇰 香港02节点
+      - 🇭🇰 香港03节点
+      - 🇭🇰 香港04节点
+      - 🇭🇰 香港05节点
+      - 🇭🇰 香港06节点
+      - 🇭🇰 香港07节点
+      - 🇭🇰 香港08节点
+      - 🇯🇵 日本01节点
+      - 🇯🇵 日本02节点
+      - 🇯🇵 日本03节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
