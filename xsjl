@@ -5,34 +5,58 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡, server: tw.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: tw.transit.freework.cyou}}
-  - {name: 🇭🇰 香港区域-🚀BGP三网优化-负载均衡, server: hk.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡, server: kr.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr.transit.freework.cyou}}
-  - {name: 🇯🇵 日本区域-🚀BGP三网优化-负载均衡, server: jp.transit.freework.cyou, port: 10000, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp.transit.freework.cyou}}
-  - {name: 🇨🇳 台湾01节点, server: tw-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇨🇳 台湾02节点, server: tw-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇨🇳 台湾03节点, server: tw-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港01节点, server: hk-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港02节点, server: hk-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港03节点, server: hk-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港04节点, server: hk-4.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港05节点, server: hk-5.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港06节点, server: hk-6.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港07节点, server: hk-7.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港08节点, server: hk-8.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本01节点, server: jp-1.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本02节点, server: jp-2.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本03节点, server: jp-3.transit.freework.cyou, port: 80, type: vmess, uuid: c1e86473-aed2-4ea5-bd78-7b44da4fddb9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡, server: hn-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-tw.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡, server: hz-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-tw.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡, server: hd-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-tw.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡, server: hn-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-hk.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡, server: hz-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-hk.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡, server: hd-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-hk.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡, server: hn-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-kr.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡, server: hz-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-kr.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡, server: hd-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-kr.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡, server: hn-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-jp.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡, server: hz-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-jp.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡, server: hd-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-jp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡, server: hn-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-sgp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡, server: hz-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-sgp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡, server: hd-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-sgp.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾01节点, server: tw-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾02节点, server: tw-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾03节点, server: tw-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港01节点, server: hk-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港02节点, server: hk-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港03节点, server: hk-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港04节点, server: hk-4.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港05节点, server: hk-5.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港06节点, server: hk-6.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港07节点, server: hk-7.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港08节点, server: hk-8.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇰🇷 韩国01节点, server: kr-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇰🇷 韩国02节点, server: kr-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本01节点, server: jp-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本02节点, server: jp-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本03节点, server: jp-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -44,6 +68,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -52,10 +78,21 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -67,6 +104,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -76,10 +115,21 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -91,6 +141,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -98,8 +150,12 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -117,10 +173,21 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -132,6 +199,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -140,10 +209,21 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -155,6 +235,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -164,10 +246,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -179,6 +272,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
@@ -197,10 +292,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台湾区域-🚀BGP三网优化-负载均衡
-      - 🇭🇰 香港区域-🚀BGP三网优化-负载均衡
-      - 🇰🇷 韩国区域-🚀BGP三网优化-负载均衡
-      - 🇯🇵 日本区域-🚀BGP三网优化-负载均衡
+      - 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡
+      - 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡
+      - 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡
+      - 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡
+      - 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡
+      - 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡
+      - 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡
+      - 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡
+      - 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡
+      - 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡
+      - 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡
+      - 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡
+      - 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡
+      - 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡
+      - 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
       - 🇨🇳 台湾03节点
@@ -212,6 +318,8 @@ proxy-groups:
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
       - 🇭🇰 香港08节点
+      - 🇰🇷 韩国01节点
+      - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
       - 🇯🇵 日本03节点
