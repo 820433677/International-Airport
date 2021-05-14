@@ -5,55 +5,50 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 学术交流, server: 127.0.0.1, port: 80, type: vmess, uuid: 25a20f5e-5116-4d91-a335-d749de7c67db, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 127.0.0.1}}
-  - {name: 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡, server: hn-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-tw.transit.freework.cyou}}
-  - {name: 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡, server: hz-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-tw.transit.freework.cyou}}
-  - {name: 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡, server: hd-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-tw.transit.freework.cyou}}
-  - {name: 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡, server: hn-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-hk.transit.freework.cyou}}
-  - {name: 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡, server: hz-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-hk.transit.freework.cyou}}
-  - {name: 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡, server: hd-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-hk.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡, server: hn-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-kr.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡, server: hz-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-kr.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡, server: hd-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-kr.transit.freework.cyou}}
-  - {name: 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡, server: hn-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-jp.transit.freework.cyou}}
-  - {name: 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡, server: hz-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-jp.transit.freework.cyou}}
-  - {name: 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡, server: hd-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-jp.transit.freework.cyou}}
-  - {name: 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡, server: hn-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-sgp.transit.freework.cyou}}
-  - {name: 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡, server: hz-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-sgp.transit.freework.cyou}}
-  - {name: 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡, server: hd-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-sgp.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏01专线, server: hk-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-1-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏02专线, server: hk-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-2-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏03专线, server: hk-3-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-3-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏04专线, server: hk-4-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-4-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏05专线, server: hk-5-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-5-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏06专线, server: hk-6-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-6-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏07专线, server: hk-7-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-7-1.transit.freework.cyou}}
-  - {name: 🇭🇰 香港游戏08专线, server: hk-8-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-8-1.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国游戏01专线, server: kr-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr-1-1.transit.freework.cyou}}
-  - {name: 🇰🇷 韩国游戏02专线, server: kr-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr-2-1.transit.freework.cyou}}
-  - {name: 🇯🇵 日本游戏01专线, server: jp-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp-1-1.transit.freework.cyou}}
-  - {name: 🇯🇵 日本游戏02专线, server: jp-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp-2-1.transit.freework.cyou}}
-  - {name: 🇯🇵 日本游戏03专线, server: jp-3-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp-3-1.transit.freework.cyou}}
-  - {name: 🇸🇬 狮城游戏01专线, server: sgp-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sgp-1-1.transit.freework.cyou}}
-  - {name: 🇸🇬 狮城游戏02专线, server: sgp-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sgp-2-1.transit.freework.cyou}}
-  - {name: 🇨🇳 台湾01节点, server: tw-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇨🇳 台湾02节点, server: tw-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇨🇳 台湾03节点, server: tw-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港01节点, server: hk-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港02节点, server: hk-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港03节点, server: hk-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港04节点, server: hk-4.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港05节点, server: hk-5.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港06节点, server: hk-6.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港07节点, server: hk-7.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇭🇰 香港08节点, server: hk-8.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇰🇷 韩国01节点, server: kr-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇰🇷 韩国02节点, server: kr-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本01节点, server: jp-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本02节点, server: jp-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇯🇵 日本03节点, server: jp-3.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇸🇬 狮城01节点, server: sgp-1.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
-  - {name: 🇸🇬 狮城02节点, server: sgp-2.transit.freework.cyou, port: 80, type: vmess, uuid: 8351eb73-0b1c-45fe-9e4c-5d3f1d6ec41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 学术交流, server: 127.0.0.1, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 127.0.0.1}}
+  - {name: 🇨🇳 台湾区域-华南地区⏬三网优化-负载均衡, server: hn-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-tw.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾区域-华中地区🔄三网优化-负载均衡, server: hz-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-tw.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾区域-华东地区⏩三网优化-负载均衡, server: hd-tw.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-tw.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华南地区⏬三网优化-负载均衡, server: hn-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-hk.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华中地区🔄三网优化-负载均衡, server: hz-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-hk.transit.freework.cyou}}
+  - {name: 🇭🇰 香港区域-华东地区⏩三网优化-负载均衡, server: hd-hk.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-hk.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华南地区⏬三网优化-负载均衡, server: hn-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-kr.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华中地区🔄三网优化-负载均衡, server: hz-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-kr.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国区域-华东地区⏩三网优化-负载均衡, server: hd-kr.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-kr.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华南地区⏬三网优化-负载均衡, server: hn-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-jp.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华中地区🔄三网优化-负载均衡, server: hz-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-jp.transit.freework.cyou}}
+  - {name: 🇯🇵 日本区域-华东地区⏩三网优化-负载均衡, server: hd-jp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-jp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华南地区⏬三网优化-负载均衡, server: hn-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hn-sgp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华中地区🔄三网优化-负载均衡, server: hz-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hz-sgp.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城区域-华东地区⏩三网优化-负载均衡, server: hd-sgp.transit.freework.cyou, port: 10000, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hd-sgp.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏01专线, server: hk-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-1-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏02专线, server: hk-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-2-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏03专线, server: hk-3-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-3-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏04专线, server: hk-4-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-4-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏05专线, server: hk-5-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-5-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏06专线, server: hk-6-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-6-1.transit.freework.cyou}}
+  - {name: 🇭🇰 香港游戏07专线, server: hk-7-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hk-7-1.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国游戏01专线, server: kr-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr-1-1.transit.freework.cyou}}
+  - {name: 🇰🇷 韩国游戏02专线, server: kr-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: kr-2-1.transit.freework.cyou}}
+  - {name: 🇯🇵 日本游戏01专线, server: jp-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp-1-1.transit.freework.cyou}}
+  - {name: 🇯🇵 日本游戏02专线, server: jp-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: jp-2-1.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城游戏01专线, server: sgp-1-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sgp-1-1.transit.freework.cyou}}
+  - {name: 🇸🇬 狮城游戏02专线, server: sgp-2-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: sgp-2-1.transit.freework.cyou}}
+  - {name: 🇨🇳 台湾01节点, server: tw-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇨🇳 台湾02节点, server: tw-2.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港01节点, server: hk-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港02节点, server: hk-2.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港03节点, server: hk-3.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港04节点, server: hk-4.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港05节点, server: hk-5.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港06节点, server: hk-6.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇭🇰 香港07节点, server: hk-7.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇰🇷 韩国01节点, server: kr-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇰🇷 韩国02节点, server: kr-2.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本01节点, server: jp-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇯🇵 日本02节点, server: jp-2.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇸🇬 狮城01节点, server: sgp-1.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
+  - {name: 🇸🇬 狮城02节点, server: sgp-2.transit.freework.cyou, port: 80, type: vmess, uuid: f81e57ba-0dd2-4af6-9524-e4255529e0b0, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.qq.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -83,17 +78,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -101,12 +93,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: ♻️ 自动选择
@@ -137,17 +127,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -155,12 +142,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: 🌍 国外媒体
@@ -192,17 +177,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -210,12 +192,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: 🌏 国内媒体
@@ -235,10 +215,8 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -246,7 +224,6 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -276,17 +253,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -294,12 +268,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: 📲 电报信息
@@ -330,17 +302,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -348,12 +317,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: 🍎 苹果服务
@@ -385,17 +352,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -403,12 +367,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
   - name: 🎯 全球直连
@@ -449,17 +411,14 @@ proxy-groups:
       - 🇭🇰 香港游戏05专线
       - 🇭🇰 香港游戏06专线
       - 🇭🇰 香港游戏07专线
-      - 🇭🇰 香港游戏08专线
       - 🇰🇷 韩国游戏01专线
       - 🇰🇷 韩国游戏02专线
       - 🇯🇵 日本游戏01专线
       - 🇯🇵 日本游戏02专线
-      - 🇯🇵 日本游戏03专线
       - 🇸🇬 狮城游戏01专线
       - 🇸🇬 狮城游戏02专线
       - 🇨🇳 台湾01节点
       - 🇨🇳 台湾02节点
-      - 🇨🇳 台湾03节点
       - 🇭🇰 香港01节点
       - 🇭🇰 香港02节点
       - 🇭🇰 香港03节点
@@ -467,12 +426,10 @@ proxy-groups:
       - 🇭🇰 香港05节点
       - 🇭🇰 香港06节点
       - 🇭🇰 香港07节点
-      - 🇭🇰 香港08节点
       - 🇰🇷 韩国01节点
       - 🇰🇷 韩国02节点
       - 🇯🇵 日本01节点
       - 🇯🇵 日本02节点
-      - 🇯🇵 日本03节点
       - 🇸🇬 狮城01节点
       - 🇸🇬 狮城02节点
 rules:
